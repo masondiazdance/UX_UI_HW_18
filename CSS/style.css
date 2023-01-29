@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+li {
+    display:inline-block;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+footer {
+    background-color: #373738;
+}
+footer.ul {
+    display: inline-block;
+    vertical-align: top;
+}
+#portrait {
+    box-sizing: border-box;
+    width: 324px;
+    height: 324px;
+    background: url(Portrait);
+}
+body {
+    background: conic-gradient(from -6.15deg at 50% 50%, #CD3FD0 0deg, #223CCF 146.25deg, #CD3FD0 360deg);
+    background-repeat: no-repeat;
+}
+button {
+    background: #FF6161;
+    font-size: 20px;
+    padding: 14px 25px;
+    border-radius: 12px;
+    border-color:white;
+}
+button:hover {
+    background-color: #DA4A4A;
+}
+.content {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: bold;
+    color: white;
+    max-width: 40%;
+}
+.content h1 {
+    font-size: 64px;
+}
+section.heroImg{
+    display: flex;
+    justify-content:space-between;
+    height: 600px;
+    padding: 25px;
+}
