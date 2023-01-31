@@ -4,14 +4,11 @@
     background-color: #333;
     padding-bottom: 10px;
 }
+
 #logo {
     padding: 15px 10px 5px 10px;
     width: 110px;
     height: 55px;
-}
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
 }
 
 ul {
@@ -23,9 +20,11 @@ ul {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
 }
+
 li {
     display:inline-block;
 }
+
 li a {
     display: block;
     color: white;
@@ -33,26 +32,35 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
   }
+
   li a:hover {
     background-color: #111;
   }
+
 footer {
     background-color: #373738;
 }
+
 footer.ul {
     display: inline-block;
     vertical-align: top;
 }
+
+
 #portrait {
     box-sizing: border-box;
     width: 500px;
     height: 500px;
     background: url(Portrait);
+    object-fit: cover;
 }
+
 body {
     margin:0;
     padding:0;
+    font-family: 'Open Sans', sans-serif;
 }
+
 button {
     background: #FF6161;
     font-size: 20px;
@@ -60,9 +68,11 @@ button {
     border-radius: 12px;
     border-color:white;
 }
+
 button:hover {
     background-color: #DA4A4A;
 }
+
 .content {
     font-family: 'Open Sans', sans-serif; 
     font-weight: bold;
@@ -70,45 +80,40 @@ button:hover {
     max-width: 40%;
     padding: 50px 0px 0px 0px;
 }
-.content h1 {
+
+h1 {
     font-size: 64px;
 }
+
 section.heroImg{
     display: flex;
     justify-content:space-between;
     height: 600px;
     padding: 150px 100px 100px 100px;
+    flex-direction: row;
 }
 
 .flexContainer {
     display:flex;
+    gap: 1rem;
     flex-direction: row;
-    justify-content:center
+    margin: 0px 20px 0px 20px;
+
 }
-#userResearch {
-    width: 320px;
-    padding: 30px;
-    margin: auto;
+
+.flexContainer * {
     background-color: #373738;
     color:white;
+    padding: 10px;
+    border-radius: 7%;
+    flex: 1;
 }
-#uiDesign {
-    width: 320px;
-    padding: 30px 30px 12px 30px;
-    margin: auto;
-    background-color: #373738;
-    color:white;
-}
-#webDevelopment {
-    width: 320px;
-    padding: 30px;
-    margin: auto;
-    background-color: #373738;
-    color:white;
-}
+
 .mySkills {
+    padding-top: 200px;
+    padding-bottom: 400px;
     text-align: center;
-    padding: 0px 0px 200px 0px;
+    background-image: linear-gradient(white, #3DCCFF)
 }
 .workGrid {
     display:grid;
@@ -119,23 +124,23 @@ section.heroImg{
 }
 .squibbleCard {
     background-color: white;
-    max-width: 195px;
+    max-width: 99%;
     text-align: center;
     border:2px solid rgb(94, 84, 84);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 7%;
+    border-radius: 10px;
     padding: 0 0 5px 0;
 }
 .drawchangeCard {
     background-color: white;
-    max-width: 195px;
     text-align: center;
     border:2px solid rgb(94, 84, 84);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 7%;
+    border-radius: 10px;
     padding: 0 0 5px 0;
+    max-width: 99%;
 }
 .squibbleCard:hover {
     box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
@@ -149,4 +154,25 @@ section.heroImg{
 }
 .myWork {
     text-align: center;
+    background-color: #3DCCFF;
+    padding: 10px 20px 50px 20px;
+}
+@media (max-width: 1100px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    section.heroImg {
+        flex-direction: column;
+    }
+    .content {
+        text-align: center;
+        max-width: 95%;
+    }
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "squibleCard"
+            "drawchangeCard"
+            ;
+    }
 }
